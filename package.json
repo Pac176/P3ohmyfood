@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melcd238/P3ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melcd238/P3ohmyfood/issues"
+  },
+  "homepage": "https://github.com/melcd238/P3ohmyfood#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
