@@ -1,7 +1,7 @@
 .container{
     margin: auto;
     width: 65%;
-    border: brown 1px solid;
+    border:#579c87 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,7 +27,6 @@
 }
 .menu{
     width: 200px;
-    border: blueviolet 2px solid;
     text-align: center;
     height: 300px;
 }
@@ -39,15 +38,41 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fcdfdb;
+   
+   
+}
+.menu_chic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5fe;
+   
+}
+.menu_delice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+   
+}
+.menu_palette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfffd;
    
 }
 header{
     height: 10vh;
-    background-color: cadetblue;
+    background-color: #579c87;
 }
 footer{
     height: 10vh;
-    background-color: cadetblue;
+    background-color: #579c87;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,9 +82,11 @@ footer{
 footer a{
     margin-left: 3%;
     margin-right: 3%;
+    color: #fdcb46;
 }
 header h1{
     text-align: center;
+    color: #fdcb46;
 }
 .item_btn{
     display: flex;
@@ -68,8 +95,9 @@ header h1{
     height: 10vh;
 }
 .btn{
-    border: cadetblue 1px solid;
-    width: 7.5rem;
+    background-color:#579c87 ;
+    border-radius: 10% 10%;
+    width: 8rem;
     height: 2rem;
-   
+    color: #fdcb46;
 }
