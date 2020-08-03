@@ -1,7 +1,36 @@
+$color-note:  #fcdfdb;
+$color-chic:#fff5fe;
+$color-delice:#f9f9f9;
+$color-palette:#fdfffd;
+$backgroudcolor-header-footer:#579c87;
+$color-text-header-footer:#fdcb46;
+
+/*
+font-family: 'Faustina', serif;
+font-family: 'Galada', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Loved by the King', cursive;*/
+
+
+
+
+$breakpoints: (mobile:599px);
+@mixin mobile-only {
+    @media only screen and (max-width: map-get($breakpoints, mobile)) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 700px;
+        
+        
+    }   
+}
+
+
 .container{
     margin: auto;
     max-width: 1200px;
-    border:#579c87 2px solid;
+    border: 2px solid $backgroudcolor-header-footer;
     display: flex;
     flex-direction: column;
    
@@ -10,6 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+   
     
 
 }
@@ -17,14 +47,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include mobile-only;
+   
+    
 }
 .content_2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    @include mobile-only;
+    
 }
 .menu{
     width: 200px;
@@ -36,47 +71,82 @@
         display: block;
         width: 200px;
         height: 300px; 
-        padding-top: 60px;
+        padding-top: 80px;
+        
      }
 }
 
 .menu_note {
-    background-color: #fcdfdb;
-    
+    background-color: $color-note;
+    font-family: 'Loved by the King', cursive;
+      h2{
+          text-transform: uppercase;
+      }
    
    
 }
 .menu_chic {
 
-    background-color: #fff5fe;
+    background-color: $color-chic;
+    font-family: 'Faustina', serif;
+    h2{
+        text-transform: uppercase;
+    }
    a{
-       padding-top: 80px;
+       padding-top: 100px;
    }
 }
 .menu_delice {
 
-    background-color: #f9f9f9;
+    background-color: $color-delice;
+    font-family: 'Galada', cursive;
+    h2{
+        text-transform: uppercase;
+    }
     a{
         padding-top: 80px;
     }
 }
 .menu_palette {
     
-    background-color: #fdfffd;
+    background-color: $color-palette;
+    font-family: 'Kaushan Script', cursive;
+    h2{
+        text-transform: uppercase;
+    }
     a{
         padding-top: 80px;
     }
 }
 header{
     height: 10vh;
-    background-color: #579c87;
+    background-color: $backgroudcolor-header-footer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.content__menu{
+    border: solid 1px $color-note;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+      &--note{
+          font-size: 0.9rem;
+          background-color:$color-note ;
+          font-family: 'Loved by the King', cursive;
+      }
+    
+
+    
+
+}
 footer{
     height: 10vh;
-    background-color: #579c87;
+    background-color: $backgroudcolor-header-footer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,11 +156,11 @@ footer{
 footer a{
     margin-left: 3%;
     margin-right: 3%;
-    color: #fdcb46;
+    color: $color-text-header-footer;
 }
 header h1{
     text-align: center;
-    color: #fdcb46;
+    color: $color-text-header-footer;
 }
 .item_next{
     display: flex;
@@ -99,9 +169,10 @@ header h1{
     height: 15vh;
    
     a{
-        background-color:#579c87 ;
-        border-radius: 20%;
-        color: #fdcb46;
+        background-color:$backgroudcolor-header-footer ;
+        border: solid 1px $backgroudcolor-header-footer;
+        border-radius: 5%;
+        color: $color-text-header-footer;
         width: 10rem;
         height: 2rem;
         text-align: center; 

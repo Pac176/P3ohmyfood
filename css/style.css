@@ -1,7 +1,12 @@
+/*
+font-family: 'Faustina', serif;
+font-family: 'Galada', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Loved by the King', cursive;*/
 .container {
   margin: auto;
   max-width: 1200px;
-  border: #579c87 2px solid;
+  border: 2px solid #579c87;
   display: flex;
   flex-direction: column; }
 
@@ -14,14 +19,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  @media only screen and (max-width: 599px) {
+    .content_1 {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 700px; } }
 
 .content_2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 40px; }
+  margin-bottom: 80px; }
+  @media only screen and (max-width: 599px) {
+    .content_2 {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 700px; } }
 
 .menu {
   width: 200px;
@@ -33,23 +50,35 @@
     display: block;
     width: 200px;
     height: 300px;
-    padding-top: 60px; }
-
-.menu_note {
-  background-color: #fcdfdb; }
-
-.menu_chic {
-  background-color: #fff5fe; }
-  .menu_chic a {
     padding-top: 80px; }
 
+.menu_note {
+  background-color: #fcdfdb;
+  font-family: 'Loved by the King', cursive; }
+  .menu_note h2 {
+    text-transform: uppercase; }
+
+.menu_chic {
+  background-color: #fff5fe;
+  font-family: 'Faustina', serif; }
+  .menu_chic h2 {
+    text-transform: uppercase; }
+  .menu_chic a {
+    padding-top: 100px; }
+
 .menu_delice {
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  font-family: 'Galada', cursive; }
+  .menu_delice h2 {
+    text-transform: uppercase; }
   .menu_delice a {
     padding-top: 80px; }
 
 .menu_palette {
-  background-color: #fdfffd; }
+  background-color: #fdfffd;
+  font-family: 'Kaushan Script', cursive; }
+  .menu_palette h2 {
+    text-transform: uppercase; }
   .menu_palette a {
     padding-top: 80px; }
 
@@ -59,6 +88,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.content__menu {
+  border: solid 1px #fcdfdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .content__menu--note {
+    font-size: 0.9rem;
+    background-color: #fcdfdb;
+    font-family: 'Loved by the King', cursive; }
 
 footer {
   height: 10vh;
@@ -84,7 +127,8 @@ header h1 {
   height: 15vh; }
   .item_next a {
     background-color: #579c87;
-    border-radius: 20%;
+    border: solid 1px #579c87;
+    border-radius: 5%;
     color: #fdcb46;
     width: 10rem;
     height: 2rem;
